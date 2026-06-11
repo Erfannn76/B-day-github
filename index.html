@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To the One Who Holds My Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="star-canvas"></canvas>
+
+    <div class="ambient-player" id="audio-widget">
+        <div class="audio-wave" id="wave-visual">
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+        </div>
+        <div class="track-meta">
+            <p>Semua Aku Dirayakan</p>
+            <span>Nadin Amizah</span>
+        </div>
+        <button class="ctrl-toggle" id="play-btn" onclick="toggleAudio()" aria-label="Toggle Audio">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <audio id="audio-core" src="dirayakan.mp3" loop></audio>
+    </div>
+
+    <section id="entry-screen">
+        <button class="seal-button" onclick="unsealDocument()">✨</button>
+        <p class="entry-hint">Open the stardust</p>
+    </section>
+
+    <main id="story-flow">
+        
+        <section class="hero-intro">
+            <p class="entry-hint" style="margin: 0;">chapter zero</p>
+            <h1 class="title-aesthetic">The Universe Aligned<br><em>The Day You Arrived</em></h1>
+            <p style="font-size: 14px; opacity: 0.5; letter-spacing: 1px;">A handwritten digital letter.</p>
+        </section>
+
+        <section class="glass-vault letter-text">
+            <p>Today is a truly special day because it’s the birthday of the most important person in my life. I’m so incredibly grateful that our paths crossed and that I get to share this journey with you.</p>
+            <p>Ever since I've known you, you’ve always shown so much kindness, strength, and resilience. I know life hasn’t always been easy, but the way you face every challenge with so much courage is honestly one of the things I admire most about you.</p>
+            <p>As you start this new chapter, I hope all your dreams and wishes come true. May you be blessed with good health, genuine happiness, and endless opportunities. Never doubt yourself—you are so much stronger than you think.</p>
+            <p>Thank you for bringing so much joy and meaning into my life. Having you by my side means the world to me, and I’ll always be here to support you every step of the way.</p>
+            <p>I hope this year brings you unforgettable moments and all the happiness you truly deserve.</p>
+            <p>Happy Birthday 🤍</p>
+            <p style="text-align: right; color: var(--accent-glow); font-family: 'Sacramento', cursive; font-size: 32px; margin: 0;">with love, always.</p>
+        </section>
+
+        <section class="attribute-sections">
+            <p class="entry-hint">constellations</p>
+            <h2 style="font-size: 32px; font-weight: 400;">Things That Orbit Around You</h2>
+            
+            <div class="asymmetrical-grid">
+                <div class="concept-box">
+                    <h4 class="concept-title">Your Warmth</h4>
+                    <p class="concept-body">I always feel so comfortable whenever we talk. Even the smallest things you do just make me feel so at peace it’s like a little break from everything where I can just relax and be myself.</p>
+                </div>
+                <div class="concept-box">
+                    <h4 class="concept-title">The Safe Space</h4>
+                    <p class="concept-body">Whenever I'm with you, all the tiredness and chaos in my head just disappear. Thank you for being my safe space, where I don't ever have to pretend and can just be myself.</p>
+                </div>
+                <div class="concept-box">
+                    <h4 class="concept-title">Your Authenticity</h4>
+                    <p class="concept-body">There’s something so special about you that I know I’ll never find in anyone else. Your sincerity, and just the way you are, is what makes you so unique. You never have to pretend to be anyone else, because the real you is already my favorite person.</p>
+                </div>
+                <div class="concept-box">
+                    <h4 class="concept-title">Endless Resilience</h4>
+                    <p class="concept-body">I know behind your smile, you've been fighting battles and going through a lot of tough days on your own without complaining. The way you handle everything makes me so incredibly proud of you. But just remember, you don't have to carry it all alone. You don't always have to be strong I'm right here, and you can always lean on me.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-block">
+            <p class="entry-hint">snapshots</p>
+            <h2 style="font-size: 32px; font-weight: 400;">Fragments of Beauty</h2>
+            
+            <div class="polaroid-grid">
+                <div class="polaroid-card" style="--rot: -3deg;">
+                    <div class="polaroid-frame"><img src="image/IMG_20260605_165800.jpg" alt="You"></div>
+                    <p class="polaroid-caption">you</p>
+                </div>
+                <div class="polaroid-card" style="--rot: 2deg;">
+                    <div class="polaroid-frame"><img src="image/IMG_20260610_151901.jpg" alt="Are"></div>
+                    <p class="polaroid-caption">are</p>
+                </div>
+                <div class="polaroid-card" style="--rot: -1.5deg;">
+                    <div class="polaroid-frame"><img src="image/IMG_20260612_012101.jpg" alt="My"></div>
+                    <p class="polaroid-caption">my</p>
+                </div>
+                 <div class="polaroid-card" style="--rot: 1.5deg;">
+                    <div class="polaroid-frame"><img src="image/IMG_20260605_170225.jpg" alt="Universe"></div>
+                    <p class="polaroid-caption">universe</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="outro-footer">
+            <h2 class="closing-headline">Loved, Today & Beyond.</h2>
+            <p class="footer-text">Happy birthday to my most precious person. Let’s take our time walking the rest of the way together, side by side, nice and slow.</p>
+            <p class="made-love" style="opacity: 0.4; font-size: 12px; margin-top: 25px;">wrapped in stardust — 2026</p>
+        </section>
+    </main>
+    <script src="layout.js"></script>
+</body>
+</html>
